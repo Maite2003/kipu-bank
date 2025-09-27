@@ -2,6 +2,18 @@
 
 A simple and secure Ethereum smart contract that functions as a decentralized bank, allowing users to deposit and withdraw Ether with configurable limits and capacity constraints.
 
+## 🚀 **Live Deployment**
+
+✅ **Contract deployed on Sepolia Testnet!**
+
+- **Contract Address**: `0xb479c3e981030e7595b7f60928f199b1e9434ab0`
+- **Etherscan**: [View on Sepolia Etherscan](https://sepolia.etherscan.io/address/0xb479c3e981030e7595b7f60928f199b1e9434ab0)
+- **Network**: Sepolia Testnet
+- **Status**: ✅ Verified and Ready to Use
+
+### Quick Interact:
+You can interact with this live contract directly through Etherscan's "Write Contract" tab!
+
 ## 📋 Overview
 
 KipuBank is a Solidity smart contract designed to simulate basic banking operations on the Ethereum blockchain. It provides secure deposit and withdrawal functionality with built-in safeguards and limitations.
@@ -84,8 +96,39 @@ KipuBank is a Solidity smart contract designed to simulate basic banking operati
 
 When deploying, you need to provide two parameters:
 
-- `_threshold`: Maximum withdrawal amount in Wei (e.g., 1000000000000000000 = 1 ETH)
-- `_bankCap`: Maximum bank capacity in Wei (e.g., 100000000000000000000 = 100 ETH)
+- `_threshold`: Maximum withdrawal amount in Wei (e.g., `100000000000000000` = 0.1 ETH)
+- `_bankCap`: Maximum bank capacity in Wei (e.g., `10000000000000000000` = 10 ETH)
+
+**Recommended Values:**
+```
+Testing:
+_THRESHOLD: 100000000000000000     (0.1 ETH)
+_BANKCAP: 10000000000000000000     (10 ETH)
+
+Production:
+_THRESHOLD: 1000000000000000000    (1 ETH)  
+_BANKCAP: 100000000000000000000    (100 ETH)
+```
+
+## 🎮 **Interact with Live Contract**
+
+### Option 1: Using Etherscan (Easiest)
+1. Go to [Sepolia Etherscan Contract Page](https://sepolia.etherscan.io/address/0xb479c3e981030e7595b7f60928f199b1e9434ab0)
+2. Click on "Contract" tab
+3. Click on "Write Contract" 
+4. Connect your MetaMask wallet
+5. Use the functions:
+   - **deposit**: Send ETH to deposit (put amount in Value field)
+   - **withdraw**: Enter amount in Wei to withdraw
+   - **getUserBalance**: Check your balance
+   - **getThreshold**: See withdrawal limit
+
+### Option 2: Using Remix
+1. Open [Remix IDE](https://remix.ethereum.org/)
+2. In "Deploy & Run" tab, use "At Address" feature
+3. Enter contract address: `0xb479c3e981030e7595b7f60928f199b1e9434ab0`
+4. Make sure you're connected to Sepolia network
+5. Interact with the loaded contract
 
 ## 🔧 Interacting with the Contract
 
